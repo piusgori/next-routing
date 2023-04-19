@@ -1,5 +1,5 @@
-import { useRouter } from 'next/router'
-import React, { Fragment } from 'react'
+import { useRouter } from 'next/router';
+import React, { Fragment } from 'react';
 import { getEventById } from '../../../dummy-data';
 import EventSummary from '@/components/event-detail/event-summary';
 import EventLogistics from '@/components/event-detail/event-logistics';
@@ -27,4 +27,4 @@ const EventDetailsPage = () => {
   )
 }
 
-export default EventDetailsPage
+export default EventDetailsPage;
