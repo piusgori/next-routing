@@ -6,7 +6,7 @@ function HomePage({ products }) {
 
     return (
       <ul>
-        {products.map(prod => <li key={prod.id}><Link href={`/${prod.id}`}>{prod.title}</Link></li>)}
+        {products.map(prod => <li key={prod.id}><Link href={`/products/${prod.id}`}>{prod.title}</Link></li>)}
       </ul>
     );
   }
