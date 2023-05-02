@@ -2,10 +2,11 @@ import React from 'react';
 import classes from './post-content.module.css';
 import PostHeader from './post-header';
 import ReactMarkdown from 'react-markdown';
+import Image from 'next/image';
 
 const PostContent = ({ post }) => {
 
-    const imagePath = `/images/posts/${post.slug}/${post.image}`
+    const imagePath = `/images/posts/${post.slug}/${post.image}`;
 
   return (
     <article className={classes.content}>
@@ -15,4 +16,4 @@ const PostContent = ({ post }) => {
   )
 }
 
-export default PostContent
+export default PostContent;
