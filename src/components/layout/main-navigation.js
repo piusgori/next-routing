@@ -1,20 +1,30 @@
-import React from 'react'
-import Logo from './logo'
-import Link from 'next/link'
-import classes from './main-navigation.module.css'
+import Link from 'next/link';
 
-const MainNavigation = () => {
+import classes from './main-navigation.module.css';
+
+function MainNavigation() {
   return (
     <header className={classes.header}>
-        <Link legacyBehavior href='/'><a><Logo /></a></Link>
-        <nav>
-            <ul>
-                <li><Link href='/posts'>Posts</Link></li>
-                <li><Link href='/contact'>Contact</Link></li>
-            </ul>
-        </nav>
+      <Link href='/'>
+        <a>
+          <div className={classes.logo}>Next Auth</div>
+        </a>
+      </Link>
+      <nav>
+        <ul>
+          <li>
+            <Link href='/auth'>Login</Link>
+          </li>
+          <li>
+            <Link href='/profile'>Profile</Link>
+          </li>
+          <li>
+            <button>Logout</button>
+          </li>
+        </ul>
+      </nav>
     </header>
-  )
+  );
 }
 
-export default MainNavigation
+export default MainNavigation;
